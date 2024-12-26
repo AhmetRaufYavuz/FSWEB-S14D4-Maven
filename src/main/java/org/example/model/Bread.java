@@ -18,7 +18,7 @@ public class Bread extends ProductForSale {
 
 
     @Override
-    void showDetails() {
+    public void showDetails() {
         System.out.println(super.toString()+this);
     }
 

@@ -28,7 +28,7 @@ public abstract class ProductForSale {
         return quantity * this.price;
     }
 
-    abstract void showDetails();
+    public abstract void showDetails();
 
 
     @Override

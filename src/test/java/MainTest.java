@@ -26,9 +26,9 @@ public class MainTest {
 
     @BeforeEach
     void setUp() {
-        bread = new Bread(10, "Test", "Test Bread");
-        chocolate = new Chocolate(10, "Test", "Test Chocolate");
-        coke = new Coke(10, "Test", "Test Coke");
+        bread = new Bread(10, "Test Bread", "Test");
+        chocolate = new Chocolate(10, "Test Chocolate", "Test");
+        coke = new Coke(10, "Test Coke", "Test");
         troll = new Troll("Shrek", 1000, 100);
     }
 
@@ -64,7 +64,7 @@ public class MainTest {
     @Test
     public void testShowDetails() throws NoSuchMethodException {
         Method showDetailsMethod = bread.getClass().getDeclaredMethod("showDetails");
-        assertEquals(showDetailsMethod.getModifiers(), 1);
+        assertEquals(1, showDetailsMethod.getModifiers());
     }
 
     @DisplayName("Troll sınıfı doğru değişkenlere tiplerine sahip mi ?")
